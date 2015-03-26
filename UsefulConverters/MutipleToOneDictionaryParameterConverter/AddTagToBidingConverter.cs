@@ -15,7 +15,7 @@ namespace UsefulConverters.MutipleToOneDictionaryParameterConverter
     ///  <Button Content="Add Client">
     ///      <i:Interaction.Triggers>
     ///          <i:EventTrigger EventName="Click">
-    ///              <command:EventToCommand Command="{Binding AddClient}" PassEventArgsToCommand="True">
+    ///              <command:EventToCommand Command="{Binding AddClient}">
     ///                  <command:EventToCommand.CommandParameter>
     ///                      <MultiBinding Converter="{StaticResource MultipleToOneParameterConverter}">
     ///                          <Binding ElementName="tb_FirstName" Path="Text" Converter="{StaticResource AddTagToBidingConverter}" ConverterParameter="FirstName" />
